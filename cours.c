@@ -168,7 +168,7 @@ void incre(int *nombre){
 incre(&maVariable);
 
 
-enterTheTabloid(){
+void enterTheTabloid(){
     int tableau[4];
 
     tableau[0] = 50;
@@ -238,7 +238,7 @@ int calculLongueur(){
 
  }
 
-compare(){
+void compare(){
     char chaine[] = "Test text", chaine2[] = "Test text";
 
     if(strcmp(chaine, chaine2) == 0) // Si chaînes identiques
