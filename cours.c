@@ -264,9 +264,9 @@ void searchFor(){
     char chaine[] = "Test text", *suiteChaine = NULL
     // On cherche la première occurrence de e, x ou t dans "Test text" 
     suiteChaine = strpbrk(chaine , "ext");
-    // "est text"
+    // "Test text"
     if(suiteChaine != NULL){
-        printf("Il y avait bien un e dans la chaine");
+        printf("Il y avait bien un t dans la chaine");
     }
 
 }
@@ -283,14 +283,20 @@ void searchForString(){
 
 void writeInto( ){
     char chaine[100];
+    int taxe =24;
     int prix = 100;
     // On écrit "Cet objet coute 100 €" dans chaine
-    sprintf(chaine, "Cet objet coute %d €", prix);
+    sprintf(chaine, "Cet objet coute %d € avec %d pourcents de taxe", prix, taxe);
     // On affiche chaine pour vérifier qu'elle contient bien cela :
     printf("%s", chaine)
 }
 
 
+// faire les fonctions suivantes : 
+// strstr
+// strlen
+// strcpy
+// strpbrk
 
 
 // Creez un programme qui :
